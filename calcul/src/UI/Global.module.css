@@ -1,0 +1,34 @@
+body {
+    background-color: blueviolet;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.display {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:  20% 20% 20% 20% 20%; 
+    
+}
+
+
+
+.button {
+    padding: 20px 30px;
+    cursor: pointer;
+}

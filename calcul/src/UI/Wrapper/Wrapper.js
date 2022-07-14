@@ -1,6 +1,8 @@
 const Wrapper = (props) => {
     return (
-        props.children
+        <section className={props.className}>
+            {props.children}
+        </section>
     );
 }
 

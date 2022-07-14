@@ -9,7 +9,7 @@ function App() {
 const [display, setDisplay] = useState("");
 
 const addToDisplay = (event) => {
-     setDisplay(display + event.target.innerText)
+     setDisplay(display + event.target.innerText);
 }
 
 const equal = () => {
@@ -21,28 +21,31 @@ const reset = () => {
 }
 
   return (
-    <Wrapper>
+    <Wrapper className={classes.wrapper}>
       <Card className={classes.container}>
-         <Card>
+         <Card className={classes.display}>
            {display}
         </Card>
-        <Button onClick={addToDisplay}>0</Button>
-        <Button onClick={addToDisplay}>.</Button>
-        <Button onClick={addToDisplay}>1</Button>
-        <Button onClick={addToDisplay}>2</Button>
-        <Button onClick={addToDisplay}>3</Button>
-        <Button onClick={addToDisplay}>4</Button>
-        <Button onClick={addToDisplay}>5</Button>
-        <Button onClick={addToDisplay}>6</Button>
-        <Button onClick={addToDisplay}>7</Button>
-        <Button onClick={addToDisplay}>8</Button>
-        <Button onClick={addToDisplay}>9</Button>
-        <Button onClick={reset}>AC</Button>
-        <Button onClick={addToDisplay}>/</Button>
-        <Button onClick={addToDisplay}>*</Button>
-        <Button onClick={addToDisplay}>-</Button>
-        <Button onClick={addToDisplay}>+</Button>
-        <Button onClick={equal}>=</Button>
+        <Card className={classes.buttons}>
+        <Button className={classes.button} onClick={addToDisplay}>0</Button>
+        <Button className={classes.button} onClick={addToDisplay}>.</Button>
+        <Button className={classes.button} onClick={addToDisplay}>1</Button>
+        <Button className={classes.button} onClick={addToDisplay}>2</Button>
+        <Button className={classes.button} onClick={addToDisplay}>3</Button>
+        <Button className={classes.button} onClick={addToDisplay}>4</Button>
+        <Button className={classes.button} onClick={addToDisplay}>5</Button>
+        <Button className={classes.button} onClick={addToDisplay}>6</Button>
+        <Button className={classes.button} onClick={addToDisplay}>7</Button>
+        <Button className={classes.button} onClick={addToDisplay}>8</Button>
+        <Button className={classes.button} onClick={addToDisplay}>9</Button>
+        <Button className={classes.button} onClick={equal}>=</Button>
+        <Button className={classes.button} onClick={addToDisplay}>/</Button>
+        <Button className={classes.button} onClick={addToDisplay}>*</Button>
+        <Button className={classes.button} onClick={addToDisplay}>-</Button>
+        <Button className={classes.button} onClick={addToDisplay}>+</Button>
+        <Button className={classes.button} onClick={reset}>AC</Button>
+        </Card>
+        
       </Card>
     </Wrapper>
   );
