@@ -27,25 +27,29 @@ const reset = () => {
            {display}
         </Card>
         <Card className={classes.buttons}>
-        <Button className={classes.button} onClick={addToDisplay}>0</Button>
-        <Button className={classes.button} onClick={addToDisplay}>.</Button>
-        <Button className={classes.button} onClick={addToDisplay}>1</Button>
-        <Button className={classes.button} onClick={addToDisplay}>2</Button>
-        <Button className={classes.button} onClick={addToDisplay}>3</Button>
-        <Button className={classes.button} onClick={addToDisplay}>4</Button>
-        <Button className={classes.button} onClick={addToDisplay}>5</Button>
-        <Button className={classes.button} onClick={addToDisplay}>6</Button>
         <Button className={classes.button} onClick={addToDisplay}>7</Button>
         <Button className={classes.button} onClick={addToDisplay}>8</Button>
         <Button className={classes.button} onClick={addToDisplay}>9</Button>
-        <Button className={classes.button} onClick={equal}>=</Button>
-        <Button className={classes.button} onClick={addToDisplay}>/</Button>
-        <Button className={classes.button} onClick={addToDisplay}>*</Button>
-        <Button className={classes.button} onClick={addToDisplay}>-</Button>
-        <Button className={classes.button} onClick={addToDisplay}>+</Button>
-        <Button className={classes.button} onClick={reset}>AC</Button>
+        <Button className={classes.button_operator} onClick={addToDisplay}>+</Button>
+
+        <Button className={classes.button} onClick={addToDisplay}>4</Button>
+        <Button className={classes.button} onClick={addToDisplay}>5</Button>
+        <Button className={classes.button} onClick={addToDisplay}>6</Button>
+        <Button className={classes.button_operator} onClick={addToDisplay}>-</Button>
+
+        <Button className={classes.button} onClick={addToDisplay}>1</Button>
+        <Button className={classes.button} onClick={addToDisplay}>2</Button>
+        <Button className={classes.button} onClick={addToDisplay}>3</Button>
+        <Button className={classes.button_operator} onClick={addToDisplay}>*</Button>
+
+        <Button className={classes.button} onClick={addToDisplay}>0</Button> 
+        <Button className={classes.button} onClick={addToDisplay}>.</Button>
+        <Button className={classes.button} onClick={addToDisplay}>00</Button>
+        <Button className={classes.button_operator} onClick={addToDisplay}>/</Button>
+
+        <Button className={classes.button_reset} onClick={reset}>AC</Button>
+        <Button className={classes.button_equal} onClick={equal}>=</Button>
         </Card>
-        
       </Card>
     </Wrapper>
   );
