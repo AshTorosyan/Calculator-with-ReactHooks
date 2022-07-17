@@ -3,6 +3,7 @@ import Button from "./Components/Button/Button";
 import Wrapper from "./UI/Wrapper/Wrapper";
 import Card from "./UI/Card/Card";
 import classes from "./UI/Global.module.css";
+import "./App.css";
 
 function App() {
 
